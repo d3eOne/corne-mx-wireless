@@ -57,10 +57,10 @@
 
             label = "Base";
             bindings = <
-  &kp Q             &kp W  &kp E                  &kp R      &kp T    &kp Y  &kp U          &kp I      &kp O       &kp P
-  &kp A             &kp S  &kp D                  &kp F      &kp G    &kp H  &kp J          &kp K      &kp L       &kp SQT
-  &mt LEFT_SHIFT Z  &kp X  &kp C                  &kp V      &kp B    &kp N  &kp M          &kp COMMA  &kp PERIOD  &mt RSHFT SLASH
-                           &mt LEFT_CONTROL LCMD  &kp SPACE  &mo 1    &mo 2  &kp BACKSPACE  &kp ENTER
+  &kp Q             &kp W  &kp E  &kp R           &kp T          &kp Y            &kp U      &kp I      &kp O       &kp P
+  &kp A             &kp S  &kp D  &kp F           &kp G          &kp H            &kp J      &kp K      &kp L       &kp SQT
+  &mt LEFT_SHIFT Z  &kp X  &kp C  &kp V           &kp B          &kp N            &kp M      &kp COMMA  &kp PERIOD  &mt RSHFT SLASH
+                           &none  &mt LCTRL LCMD  &lt 1 SPACE    &lt 2 BACKSPACE  &kp ENTER  &none
             >;
         };
 
@@ -92,7 +92,7 @@
   &kp F1      &kp F2        &kp F3        &kp F4        &kp F5          &kp F6      &kp F7      &kp F8        &kp F9     &kp F10
   &kp F11     &kp F12       &trans        &trans        &trans          &kp LEFT    &kp DOWN    &kp UP_ARROW  &kp RIGHT  &trans
   &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_NXT  &bt BT_PRV  &trans        &kp PG_UP  &kp PAGE_DOWN
-                            &trans        &trans        &trans          &mo 3       &trans      &trans
+                            &trans        &trans        &trans          &trans      &trans      &trans
             >;
         };
 
@@ -102,6 +102,15 @@
   &kp TAB  &trans         &trans     &trans     &trans    &kp KP_DIVIDE    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS
   &kp DEL  &kp LC(X)      &kp LC(C)  &kp LC(V)  &to 0     &kp KP_COMMA     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER
                           &trans     &kp LALT   &trans    &kp BACKSPACE    &kp KP_NUMBER_0  &kp KP_DOT
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                  &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
